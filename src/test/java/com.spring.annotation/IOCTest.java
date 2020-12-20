@@ -36,4 +36,21 @@ public class IOCTest {
         String[] beanNames = applicationContext.getBeanNamesForType(Person.class);
         Arrays.stream(beanNames).forEach(System.out::println);
     }
+
+    @Test
+    public void testComponentScan() {
+        AnnotationConfigApplicationContext applicationContext =
+                new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
+        Arrays.stream(beanDefinitionNames).forEach(System.out::println);
+    }
+
+    @Test
+    public void testScope() {
+        AnnotationConfigApplicationContext applicationContext =
+                new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        Person person1 = applicationContext.getBean(Person.class);
+        Person person2 = applicationContext.getBean(Person.class);
+        System.out.println(person1 == person2);
+    }
 }
