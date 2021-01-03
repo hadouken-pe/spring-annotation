@@ -59,6 +59,13 @@ public class IOCTest {
         getBeanDefinitionNames(applicationContext);
     }
 
+    @Test
+    public void testPostConstruct() {
+        getBeanDefinitionNames(applicationContext);
+        applicationContext.close();
+        System.out.println("application context close");
+    }
+
     private void getBeanDefinitionNames(AnnotationConfigApplicationContext applicationContext) {
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
         Arrays.stream(beanDefinitionNames).forEach(System.out::println);

@@ -1,5 +1,7 @@
 package com.spring.annotation.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import lombok.Data;
 
 /**
@@ -9,8 +11,10 @@ import lombok.Data;
 @Data
 public class Person {
 
+    @Value("张三")
     private String name;
 
+    @Value("#{20 - 2}")
     private Integer age;
 
     private String nickName;
