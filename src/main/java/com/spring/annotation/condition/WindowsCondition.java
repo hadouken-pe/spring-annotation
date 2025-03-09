@@ -11,8 +11,8 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 /**
  * 判断是不是Windows环境
  *
- * @Author hadouken.pe@gmail.com
- * @Date 2020-12-27 11:23:05
+ * @author hadouken.pe@gmail.com
+ * @date 2020-12-27 11:23:05
  */
 public class WindowsCondition implements Condition {
 

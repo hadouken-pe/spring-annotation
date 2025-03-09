@@ -9,8 +9,8 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
 /**
- * @Author hadouken.pe@gmail.com
- * @Date 2020-12-27 11:23:05
+ * @author hadouken.pe@gmail.com
+ * @date 2020-12-27 11:23:05
  */
 public class LinuxCondition implements Condition {
 

@@ -5,8 +5,8 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author hadouken.pe@gmail.com
- * @Date 2021-01-02 15:49:27
+ * @author hadouken.pe@gmail.com
+ * @date 2020-12-27 11:23:05
  */
 @Component
 public class MyBeanPostProcess implements BeanPostProcessor {
